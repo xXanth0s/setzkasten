@@ -1880,7 +1880,7 @@ class SammlungComponent {
     }
     ngOnInit() {
         const urlChunks = window.location.href.split("/");
-        const url = `${urlChunks[urlChunks.length - 2]}/${urlChunks[urlChunks.length - 1]}`;
+        const url = `/${urlChunks[urlChunks.length - 2]}/${urlChunks[urlChunks.length - 1]}`;
         this.loadSammlung(url);
         this.loadSammelstuecke(url);
         this.userInputFormControl.valueChanges.subscribe(searchText => {
